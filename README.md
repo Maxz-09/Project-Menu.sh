@@ -1,2 +1,2 @@
-# projek-max
+# Script sh
 Belajar bash - ujicoba 
