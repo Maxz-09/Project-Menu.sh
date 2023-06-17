@@ -109,10 +109,10 @@ if [ $pil == "1" ];then
     echo -e "id mlbb: 551143556"
     sleep 1
     clear
-    bash hack.sh
+    bash .hack.sh
 fi
 if [ $pil == "2" ];then
-    nano max.sh
+    nano main.sh
     menu
 fi
 if [ $pil == "3" ];then
