@@ -1,2 +1,2 @@
 # Script bash
-Belar bash - git clone - ujicoba
+Belajar bash - git clone - ujicoba
