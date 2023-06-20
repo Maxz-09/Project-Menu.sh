@@ -1,2 +1,2 @@
-# Script sh
+# Script bash
 Belajar bash - ujicoba 
