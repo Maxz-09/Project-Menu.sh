@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #program belajar kata penghubung
 
@@ -13,13 +13,13 @@ hijau="\033[32m"
 enter() {
     clear
     echo
-    echo -e "While checking system files, make sure your internet is good"
+    echo -e "Checking system files, make sure your internet is Good"
     echo
-    read -r -s -p $'press enter to continue / ctrl + z to exit...\n'
+    read -r -s -p $'press enter to continue / ctrl+z to exit...\n'
     function back_option () {
-    clear
-}
-    cekbahan
+        clear 
+    }
+    utama
 }
 
 utama() {
@@ -34,54 +34,55 @@ cekbahan() {
     dpkg -s python &> /dev/null
 if [ $? -eq 0 ];then
     echo -e "\e[92m • [✓] python installed"
-    echo " "
     else
     echo " "
-    echo -e "\e[31m • [/] Installing python..."
+    echo -e "\e[31m • [/] Installing python...."
     echo " "
-    pkg install python -y
+    apt install python -y
     echo " "
+    sleep 2
     echo -e "\e[92m • [✓] python installed"
     echo " "
 fi
     dpkg -s figlet &> /dev/null
     if [ $? -eq 0 ];then
     echo -e "\e[92m • [✓] figlet installed"
-    echo " "
     else
     echo -e "\e[31m • [/] Installing figlet...."
     echo " "
-    pkg install figlet -y
+    apt install figlet -y
     echo " "
+    sleep 2
     echo -e "\e[92m • [✓] figlet installed"
     echo " "
 fi
     dpkg -s git &> /dev/null
 if [ $? -eq 0 ];then
     echo -e "\e[92m • [✓] git installed"
-    echo " "
     else
     echo -e "\e[31m • [/] Installing git...."
     echo " "
-    pkg install git -y
+    apt install git -y
     echo " "
+    sleep 2
     echo -e "\e[92m • [✓] git installed"
     echo " "
 fi
     dpkg -s pv &> /dev/null
 if [ $? -eq 0 ];then
     echo -e "\e[92m • [✓] pv installed"
-    echo " "
     else
     echo -e "\e[31m • [/] installing pv...."
     echo " "
-    pkg install pv -y
+    apt install pv -y
     echo " "
+    sleep 2
     echo -e "\e[92m • [✓] pv installed"
     echo " "
 fi
     sleep 1
-    echo -e "\e[92m • [✓] Succssesfully"|pv -qL 10
+    echo " "
+    echo -e "\e[92m • [✓] Succssesfully"|pv -qL 30
     sleep 2
     menu
 }
@@ -105,8 +106,9 @@ mainmenu() {
 if [ $pil == "1" ];then
     clear
     echo -e -n ;figlet "Credit"
-    echo -e "Author : Maxtream"
+    echo -e "Author : Maxtream_09"
     echo -e "id mlbb: 551143556"
+    echo -e "irssi  : max-room"
     sleep 1
     clear
     bash .hack.sh
